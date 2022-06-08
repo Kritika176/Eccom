@@ -1,0 +1,135 @@
+.checkoutContainer{
+    display: flex;
+    width: 100vw;
+    
+    /* border: 1px solid gray; */
+   
+}
+.payment{
+    flex: 2;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.cart{
+    flex: 1;
+    /* border: 1px solid black; */
+}
+.form{
+    width: 60%;
+    /* border: 1px solid blue; */
+    margin-top: 5%;
+  
+}
+.contact p{
+    font-size: 10px;
+}
+input{
+    text-decoration: none;
+}
+.cart{
+    /* border: 1px solid black; */
+    margin-top: 5%;
+   
+}
+
+.summary{
+    text-align: center;
+}
+.totalSummary{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.productCheck{
+   
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+   
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    
+}
+.productCheck img{
+    width: 15%;
+    height: 15%;
+}
+.productCheck p{
+    font-size: 12px;
+    justify-content: center;
+}
+.total{
+    text-align: center;
+    font-size: 15px;
+}
+.payBtn{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+     margin-left: 37%;
+    color: white;
+
+    cursor: pointer;
+    
+}
+.stripedBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cartProducts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-device-width: 280px) and (max-device-width: 915px) { 
+    .checkoutContainer{
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        /* border: 1px solid gray; */
+       
+    }
+    .cartProducts{
+        display: flex;
+        flex-direction:column;
+
+     
+        align-items: center;
+        
+        
+      }
+   .summary{
+       font-size: 20px;
+   }
+   .payBtn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+     margin: auto;
+    color: white;
+    
+    cursor: pointer;
+    
+}
+.checkBtn{
+    font-size: 30px;
+}
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+
+}

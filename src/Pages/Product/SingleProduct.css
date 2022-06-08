@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.brand{
+    font-size: 200%;
+}
+.name{
+    font-size: 180%;
+    border-bottom: 1px solid rgb(195, 193, 193);
+}
+.price{
+    font-size: 150%;
+}
+.SingleProductContainer{
+    display: flex;
+    
+    
+     justify-content: space-around;
+     margin: auto;
+     
+}
+
+.imageContainer{
+    /* background-color: rgb(27, 202, 71); */
+   flex: 1;
+   margin: 20px 0;
+   display: flex;
+  
+
+   justify-content: flex-end;
+    /* padding: 20px; */
+}
+
+.imageContainer>img{
+    
+    /* border: 1px solid black; */
+    border-radius: 10%;
+    object-fit:contain;
+
+}
+.descriptionContainer{
+    /* background-color: blueviolet; */
+   flex: 1;
+    display: flex;
+     flex-direction: column;
+     padding:20px 10px;
+   
+}
+
+.filterBox{
+    
+    display: flex;
+   width: 50%;
+   margin: 30px 0px;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    
+}
+
+.filterTitle{
+    font-size: 20%;
+    font-weight: 200;
+}
+
+.addContainer{
+    display: flex;
+    /* background-color: aqua; */
+    align-items: flex-start;
+    width: 20%;
+    justify-content: flex-start;
+    
+}
+.amountContainer{
+    display: flex;
+
+}
+.amount{
+    border: 1px solid black;
+     flex: 1;
+   
+}
+.filter{
+    display: flex;
+    gap: 10px;
+   
+    font-size: 3%;
+}
+.btn{
+    border-radius: 50%;
+   width: 45px;
+    color:black;
+    background-color: white;
+    font-size: 16px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+@media screen and (min-device-width:360px) and (max-device-width: 769px){
+    .SingleProductContainer{
+        display: flex;
+        
+        flex-direction: column;
+         justify-content: space-around;
+         align-items: center;
+         margin: auto;
+         
+    }
+    .imageContainer{
+        /* background-color: rgb(27, 202, 71); */
+       flex: 1;
+       margin: 20px 0;
+       display: flex;
+      justify-content: center;
+    
+      
+    }
+    .brand{
+        font-size: 170%;
+        
+        text-align: center;
+    }
+    .name{
+        font-size: 150%;
+        border-bottom: 1px solid rgb(195, 193, 193);
+    }
+    .price{
+        font-size: 150%;
+        text-align: center;
+    }
+    .filterBox{
+    
+        display: flex;
+       width: 50%;
+       
+        justify-content: space-between;
+        
+    }
+    .descriptionContainer{
+       flex: 1;
+        display: flex;
+         flex-direction: column;
+         padding:20px 10px;
+        
+          align-items: center;
+    }.addContainer{
+        display: flex;
+        /* background-color: aqua; */
+        align-items: flex-start;
+        width: 20%;
+        font-size: 30%;
+        justify-content: flex-start;
+        
+    }
+}
