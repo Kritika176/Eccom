@@ -54,9 +54,10 @@ export const Login = () => {
         
         console.log("login",res.data)
 
-         if(res.data.mess)
+         if(res.data.msg)
          {
-           setError(res.data.mess)
+          console.log(res.data.msg)
+           setError(res.data.msg)
          }
          else if(res.data.messa)
          {
@@ -96,9 +97,12 @@ export const Login = () => {
                 <div id="registerBtn">
                   
                <RegisterButton  onClick={() => navigate("/register")}>Register</RegisterButton>
+              
+               
                </div>
 			</div>
     </div>
+   
     </div>
   )
 }
