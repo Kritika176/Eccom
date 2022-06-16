@@ -34,7 +34,7 @@ export const Product = () => {
    },[category]);
 
    const handleFilter = (value) => {
-    axios.get(`https://limitless-shore-76001.herokuapp.com/products?category=${category}&brand=${value}`)
+    axios.get(`https://shrouded-reaches-37639.herokuapp.com/products?category=${category}&brand=${value}`)
          .then((res) => setCategoryData([...res.data]))
          .catch((err) => console.log(err.message))
    }

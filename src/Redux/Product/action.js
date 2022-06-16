@@ -9,7 +9,7 @@ export const getProduct = (payload) => ({
 
 export const productFunc=() => {
     return (dispatch) => {
-        axios.get("https://limitless-shore-76001.herokuapp.com/products").then((res) => {
+        axios.get("https://shrouded-reaches-37639.herokuapp.com/products").then((res) => {
            return dispatch(getProduct(res.data))
         })
     }

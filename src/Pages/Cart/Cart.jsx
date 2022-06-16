@@ -32,7 +32,7 @@ const StyleButton = styled(Button)({
   const userId = sessionStorage.getItem("id");
   useEffect(() => {
     axios
-      .get(" https://limitless-shore-76001.herokuapp.com/cart")
+      .get("https://shrouded-reaches-37639.herokuapp.com/cart")
       .then((res) => {
         res.data = res.data.filter((e) => e.userId == userId)
         setCartData([...res.data]);
@@ -58,7 +58,7 @@ const StyleButton = styled(Button)({
     if(quantity === 1 && type === 'dec') {
       console.log("iieiieieie",id)
       dispatch(removeItem(id))
-      axios.delete(` https://limitless-shore-76001.herokuapp.com/cart/${id}`)  
+      axios.delete(`https://shrouded-reaches-37639.herokuapp.com/cart/${id}`)  
       .then(res => {  
         console.log(res);  
         console.log("d",res.data);  
@@ -72,7 +72,7 @@ const StyleButton = styled(Button)({
 
       };
       axios
-        .patch(`https://limitless-shore-76001.herokuapp.com/cart/${id}`, data)
+        .patch(`https://shrouded-reaches-37639.herokuapp.com/cart/${id}`, data)
         .then((res) => console.log(res.data));
         setQuant(quant - 1);
 
@@ -87,7 +87,7 @@ const StyleButton = styled(Button)({
       };
       setQuant(quant+1);
       axios
-        .patch(`https://limitless-shore-76001.herokuapp.com/cart/${id}`, data)
+        .patch(`https://shrouded-reaches-37639.herokuapp.com/cart/${id}`, data)
         .then((res) => console.log(res.data));
     }
     dispatch(updateQuantity({id:id,quantity:quantity-1}))
@@ -95,7 +95,7 @@ const StyleButton = styled(Button)({
    const handleRemove = (id) =>{
     dispatch(removeItem(id))
     
-        axios.delete(` https://limitless-shore-76001.herokuapp.com/cart/${id}`)  
+        axios.delete(`https://shrouded-reaches-37639.herokuapp.com/cart/${id}`)  
         .then(res => {  
            
           console.log("remove",res.data);

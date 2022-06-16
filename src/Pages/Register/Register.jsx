@@ -28,7 +28,7 @@ export const Register = () => {
     const handleSubmit = (e) => {
       e.preventDefault();
       
-      axios.post("https://limitless-shore-76001.herokuapp.com/register",user)
+      axios.post("https://shrouded-reaches-37639.herokuapp.com/register",user)
       .then((res) => 
         {
           console.log("data",res.data)

@@ -33,7 +33,7 @@ const userId = sessionStorage.getItem("id");
 
   useEffect(() => {
     axios
-      .get("https://limitless-shore-76001.herokuapp.com/cart")
+      .get("https://shrouded-reaches-37639.herokuapp.com/cart")
       .then((res) =>{ 
         res.data = res.data.filter((e) => e.userId == userId)
       setData([...res.data])})

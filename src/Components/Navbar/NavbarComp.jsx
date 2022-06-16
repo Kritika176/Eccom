@@ -39,7 +39,7 @@ const [badge,setBadge] = useState([])
 const navigate = useNavigate();
 const cart = useSelector(store=>store.cart.product)
 useEffect(() => {
-    axios.get("https://limitless-shore-76001.herokuapp.com/cart").then((res) => {
+    axios.get("https://shrouded-reaches-37639.herokuapp.com/cart").then((res) => {
 
         res.data = res.data.filter((e) => e.userId == userId)
         console.log("dddata",res.data)

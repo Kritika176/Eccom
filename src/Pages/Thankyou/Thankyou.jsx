@@ -10,7 +10,7 @@ export function Thankyou() {
     const userId = sessionStorage.getItem("id");
     useEffect(() => {
       dispatch(removeProducts())
-      axios.delete(`https://limitless-shore-76001.herokuapp.com/cart/${userId}?userId=${userId}`)
+      axios.delete(`https://shrouded-reaches-37639.herokuapp.com/cart/${userId}?userId=${userId}`)
       .then((res) => console.log("checkout",res.data))
       
   

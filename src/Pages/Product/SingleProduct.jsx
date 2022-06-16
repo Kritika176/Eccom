@@ -33,7 +33,7 @@ export const SingleProduct = () => {
   const userId = sessionStorage.getItem("id");
   console.log("ied",id)
   useEffect(() => {
-    axios.get( `https://limitless-shore-76001.herokuapp.com/products/${id}`)
+    axios.get( `https://shrouded-reaches-37639.herokuapp.com/products/${id}`)
     .then((res) => {setProduct(res.data)
              
     })
@@ -73,7 +73,7 @@ export const SingleProduct = () => {
      }
       dispatch(addProduct(cartData))
         
-      axios.post((`https://limitless-shore-76001.herokuapp.com/cart`),cartData)
+      axios.post((`https://shrouded-reaches-37639.herokuapp.com/cart`),cartData)
     .then(res => console.log("resu",res))
     .catch(err => err.message)
    }
